@@ -1,0 +1,197 @@
+2022-01-17 05:15:47 [::1][-][pf4su3oc7k5302obo90lisdntm][error][Error] Error: Class 'app\models\User' not found in C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\User.php:697
+Stack trace:
+#0 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\User.php(198): yii\web\User->renewAuthStatus()
+#1 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\User.php(366): yii\web\User->getIdentity()
+#2 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2-debug\src\Module.php(255): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2-debug\src\Module.php(226): yii\debug\Module->initPanels()
+#11 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\xampp\htdocs\mini-rs\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-01-17 05:15:47 [::1][-][pf4su3oc7k5302obo90lisdntm][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'pf4su3oc7k5302obo90lisdntm'
+    '_identity' => 'de8612e877c96d5c806216dc7654ad7c98e3f2353aad3a6e02cbe2930ac6f36aa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '7f593edbe801ca4b9f6a38d6c9bd8c39f173922fc4b011d2ca935c6c00195a78a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z2s2l_0m6nnSHLy4MkD-x8ByPbEelZa5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"97\", \"Chromium\";v=\"97\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36 Edg/97.0.1072.62'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/mini-rs/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=pf4su3oc7k5302obo90lisdntm; _identity=de8612e877c96d5c806216dc7654ad7c98e3f2353aad3a6e02cbe2930ac6f36aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=7f593edbe801ca4b9f6a38d6c9bd8c39f173922fc4b011d2ca935c6c00195a78a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z2s2l_0m6nnSHLy4MkD-x8ByPbEelZa5%22%3B%7D'
+    'HTTP_SEC_GPC' => '1'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\src\\flutter\\bin;C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\USER\\Anaconda3\\Library\\bin;C:\\Users\\USER\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\USER\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\Users\\USER\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.2.34 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.2.34'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mini-rs/web/index.php'
+    'REMOTE_PORT' => '61493'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mini-rs/web/'
+    'SCRIPT_NAME' => '/mini-rs/web/index.php'
+    'PHP_SELF' => '/mini-rs/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642392947.218
+    'REQUEST_TIME' => 1642392947
+]
+2022-01-17 05:15:55 [::1][-][pf4su3oc7k5302obo90lisdntm][error][Error] Error: Class 'app\models\User' not found in C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\User.php:697
+Stack trace:
+#0 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\User.php(198): yii\web\User->renewAuthStatus()
+#1 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\User.php(366): yii\web\User->getIdentity()
+#2 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2-debug\src\Module.php(255): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2-debug\src\Module.php(226): yii\debug\Module->initPanels()
+#11 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\xampp\htdocs\mini-rs\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\xampp\htdocs\mini-rs\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-01-17 05:15:55 [::1][-][pf4su3oc7k5302obo90lisdntm][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'pf4su3oc7k5302obo90lisdntm'
+    '_identity' => 'de8612e877c96d5c806216dc7654ad7c98e3f2353aad3a6e02cbe2930ac6f36aa:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => '7f593edbe801ca4b9f6a38d6c9bd8c39f173922fc4b011d2ca935c6c00195a78a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Z2s2l_0m6nnSHLy4MkD-x8ByPbEelZa5\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"97\", \"Chromium\";v=\"97\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36 Edg/97.0.1072.62'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/mini-rs/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=pf4su3oc7k5302obo90lisdntm; _identity=de8612e877c96d5c806216dc7654ad7c98e3f2353aad3a6e02cbe2930ac6f36aa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=7f593edbe801ca4b9f6a38d6c9bd8c39f173922fc4b011d2ca935c6c00195a78a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Z2s2l_0m6nnSHLy4MkD-x8ByPbEelZa5%22%3B%7D'
+    'HTTP_SEC_GPC' => '1'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\src\\flutter\\bin;C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\USER\\Anaconda3\\Library\\bin;C:\\Users\\USER\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\USER\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\Users\\USER\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.2.34 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.2.34'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/mini-rs/web/index.php'
+    'REMOTE_PORT' => '61494'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/mini-rs/web/'
+    'SCRIPT_NAME' => '/mini-rs/web/index.php'
+    'PHP_SELF' => '/mini-rs/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1642392955.319
+    'REQUEST_TIME' => 1642392955
+]
